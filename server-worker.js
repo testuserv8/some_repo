@@ -2,7 +2,7 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('server-worker.js').then(function(registration) {
         registration.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription){
             isPushEnabled = true;
-            console.log(subscription.data);
+            console.log(subscription);
             console.log("subscription.subscriptionId: ", subscription.subscriptionId);
             console.log("subscription.endpoint: ", subscription.endpoint);
             document.getElementById('registered_id').innerText = subscription.endpoint.replace("https://android.googleapis.com/gcm/send/", "SUBSCRIBER ID:  ");
