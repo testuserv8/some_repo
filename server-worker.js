@@ -54,3 +54,7 @@ self.addEventListener('notificationclick', function(event) {
             })
     );
 });
+
+function sendSubscriptionToServer(){
+    return true;
+}
