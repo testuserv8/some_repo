@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 
 self.addEventListener('push', function(event) {
     //debugger;
-    console.log('Received a push message', event);
+    console.log(event.data);
 
     var title = 'Notification';
     var body = 'There is newly updated content available on the site. Click to see more.';
