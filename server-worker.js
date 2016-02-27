@@ -5,7 +5,7 @@ if ('serviceWorker' in navigator) {
             console.log(subscription);
             console.log("subscription.subscriptionId: ", subscription.subscriptionId);
             console.log("subscription.endpoint: ", subscription.endpoint);
-            document.getElementById('registered_id').innerText = subscription.endpoint.replace("https://android.googleapis.com/gcm/send/", "subscriber id:  ");
+            document.getElementById('registered_id').innerText = subscription.endpoint.replace("https://android.googleapis.com/gcm/send/", "SUBSCRIBER ID:  ");
             // TODO: Send the subscription subscription.endpoint
             // to your server and save it to send a push message
             // at a later date
