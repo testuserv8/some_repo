@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('server-worker.js').then(function(registration) {
-        registration.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription){
+    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+        registration.pushManager.subscribe().then(function(subscription){
             isPushEnabled = true;
             console.log("subscription.subscriptionId: ", subscription.subscriptionId);
             console.log("subscription.endpoint: ", subscription.endpoint);
@@ -35,6 +35,7 @@ self.addEventListener('push', function(event) {
     );
 });
 
+
 self.addEventListener('notificationclick', function(event) {
     console.log('On notification click: ', event.notification.tag);
     event.notification.close();
@@ -54,3 +55,7 @@ self.addEventListener('notificationclick', function(event) {
             })
     );
 });
+
+function sendSubscriptionToServer(){
+    return true;
+}
