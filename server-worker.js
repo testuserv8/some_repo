@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator) {
 }
 
 self.addEventListener('push', function(event) {
-    debugger;
+    //debugger;
     console.log('Received a push message', event);
 
     var title = 'Notification';
@@ -54,7 +54,3 @@ self.addEventListener('notificationclick', function(event) {
             })
     );
 });
-
-function sendSubscriptionToServer(){
-    return true;
-}
