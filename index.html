@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" src="./server-worker.js"></script>
+	<script type="text/javascript" src="./service-worker-push.js"></script>
+	<script type="text/javascript" src="./service-worker-notification.js"></script>
+</head>
+<body>
+	<h1>dfghdfghdfgh</h1>
+</body>
+</html>
