@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+    navigator.serviceWorker.register('server-worker.js').then(function(registration) {
         registration.pushManager.subscribe().then(function(subscription){
             isPushEnabled = true;
             console.log("subscription.subscriptionId: ", subscription.subscriptionId);
