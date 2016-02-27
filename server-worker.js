@@ -13,8 +13,6 @@ if ('serviceWorker' in navigator) {
     }).catch(function(err) {
         console.log('ServiceWorker registration failed: ', err);
     });
-}else{
-    console.warn('serviceWorker is not supported...')
 }
 
 self.addEventListener('push', function(event) {
